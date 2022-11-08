@@ -2,7 +2,7 @@ import sqlite3
 
 def connect():
     try:
-        sqliteConnection = sqlite3.connect('app_soen.db')
+        sqliteConnection = sqlite3.connect('demo.db')
         cursor = sqliteConnection.cursor()
         print("Connected to SQLite")
         return cursor,sqliteConnection   
@@ -10,7 +10,7 @@ def connect():
         print("Failed to read data from sqlite table", error)
 def close():
     try:
-        sqliteConnection = sqlite3.connect('app_soen.db')
+        sqliteConnection = sqlite3.connect('demo.db')
         cursor = sqliteConnection.cursor()
         print("Connected to SQLite")
         return cursor   
