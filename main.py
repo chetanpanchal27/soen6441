@@ -5,8 +5,8 @@ from season import Season
 from mapper import addrace, addseason, deleterace, deleteseason, getrace_driverid,adddriver,deletedriver, getseasons,updatedriver,getdriverbyId,getraces_season, updaterace, updateseason
 from driver import Driver
 ##get driver by id
-#id=input("Driver ID: ==> ")
-# print(getdriverbyId(id))
+id=input("Driver ID: ==> ")
+print(getdriverbyId(id))
 
 # drivers=getdrivers_raceid(1)
 # print(drivers)
