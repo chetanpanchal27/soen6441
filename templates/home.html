@@ -1,0 +1,89 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" 
+        content="width=device-width, 
+                 initial-scale=1, 
+                 shrink-to-fit=no">
+  <title>
+    load data from json file
+    into a bootstrap table
+  </title>
+  
+  <!-- Include Bootstrap for styling -->
+  <link rel="stylesheet" 
+        href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <!-- Include the Bootstrap Table
+  CSS for the table -->
+  <link rel="stylesheet"
+        href=
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+</head>
+<body>
+  
+
+
+
+ 
+  
+  <!-- Include jQuery and other required files for Bootstrap -->
+  <script src=
+"https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+  
+  <!-- Include the JavaScript file for Bootstrap table -->
+  <script src=
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js">
+  </script>
+  
+  <!-- Include the file where the JSON data is stored -->
+  <script type="text/javascript" 
+          src="test.js">
+  </script>
+<br>
+<center><h2>TABLE MANIPULATIONS</h2></center>
+<br>
+<div class="row">
+    <div class=" col-sm-6">
+      <div class="card text-white bg-success mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Manipulate Race Table</h5>
+          <p class="card-text">Click the button to Add, Update, Delete or Other Operations.</p>
+          <a href="/getAllraces" class="btn btn-primary">RACE</a>
+        </div>
+      </div>
+    </div>
+    <div class=" col-sm-6">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Manipulate Driver Table</h5>
+            <p class="card-text">Click the button to Add, Update, Delete or Other Operations.</p>
+            <a href="/getAlldrivers" class="btn btn-primary">Driver</a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<!-- <form action="/getAlldrivers" method="get">
+    <input type="submit" value="Driver">
+  </form>
+  <form action="/getAllraces" method="get">
+    <input type="submit" value="Race">
+  </form> -->
+</body>
+</html>
+
