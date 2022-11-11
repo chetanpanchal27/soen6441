@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" 
+        content="width=device-width, 
+                 initial-scale=1, 
+                 shrink-to-fit=no">
+  <title>
+    load data from json file
+    into a bootstrap table
+  </title>
+  
+  <!-- Include Bootstrap for styling -->
+  <link rel="stylesheet" 
+        href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <!-- Include the Bootstrap Table
+  CSS for the table -->
+  <link rel="stylesheet"
+        href=
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://127.0.0.1:5000/getAllraces">Get all races<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5000/rinsert">Insert Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5000/rdelete">Delete</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5000/rupdate">Update</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5000/srace">Get Races Based on DriverID</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5000/">BACK</a>
+              </li>
+            
+          </ul>
+       
+        </div>
+      </nav>
+    
+    
+
+<form action="/deleteByRaceId" method="get">
+    Enter Race ID: <input type="text" id="raceid" name="raceid" ><br>
+ 
+    <input type="submit" value="Delete Race">
+  </form>
+</body>
+</html>
