@@ -1,8 +1,8 @@
 import sqlite3
 from connectdatabase import connect,close
-
+from driver import Driver
 class Drivermapper:
-    def _init_(self):
+    def __init__(self):
         self.cursor,self.sqliteConnection=connect()
     
     def add(self,input):
@@ -33,8 +33,12 @@ class Drivermapper:
         select=f'SELECT * FROM driver WHERE driverId="{input}"'
         self.cursor.execute(select)
         totalRows = self.cursor.fetchone()
-        return totalRows
-
+        if totalRows!=None:
+            driver=Driver(totalRows[0],totalRows[1],totalRows[2],totalRows[3],totalRows[4],totalRows[5],totalRows[6])
+            return totalRows
+        else:
+            return None
+        
     def getdrivers_raceid(self,input):
         list = f'SELECT DISTINCT driver.forename, driver.surname FROM driver JOIN race_driver ON driver.driverId = race_driver.driverId AND race_driver.raceId = "{input}"' 
         rows = self.cursor.execute(list).fetchall()

@@ -2,7 +2,8 @@ import sqlite3
 
 def connect():
     try:
-        sqliteConnection = sqlite3.connect('demo.db')
+        sqliteConnection = sqlite3.connect('demo.db',check_same_thread=False)
+        cursor = sqliteConnection.cursor()
         cursor = sqliteConnection.cursor()
         print("Connected to SQLite")
         return cursor,sqliteConnection   

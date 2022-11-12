@@ -81,21 +81,35 @@
           src="test.js">
   </script>
 
- <div class="row">
+<div class="row">
 	<table class="table caption-top">
   <caption>List of users</caption>
 
   <thead>
+
     <tr>
-    
-      <th scope="col">List of all Races</th>
+      <th></th>
+      <th>Race Id</th>
+      <th>Year</th>
+      <th>Round</th>
+      <th >Name</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Cirsuit ID</th>
     
     </tr>
   </thead>
  {% for item in l %}
   <tbody>
     <tr>
-      <td>{{item}}
+      <td></td>
+      <td>{{item[0]}}</td>
+      <td>{{item[1]}}</td>
+      <td>{{item[2]}}</td>
+      <td>{{item[3]}}</td>
+      <td>{{item[4]}}</td>
+      <td>{{item[5]}}</td>
+      <td>{{item[6]}}</td>
       
     </td>
     </tr>
